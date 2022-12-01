@@ -4,27 +4,51 @@ import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
 
 const AddUser = (props) => {
-	const [enteredUsername, setEnteredUsername] = useState("");
-	const [enteredUserage, setEnteredUserage] = useState("");
+	const [enteredUserName, setEnteredUserName] = useState("");
+	const [enteredUserAge, setEnteredUserAge] = useState("");
 
 	const addUserHandler = (event) => {
 		event.preventDefault();
+		if (
+			enteredUserName.trim().length === 0 ||
+			enteredUserAge.trim().length === 0
+		) {
+			return;
+		}
+		//example: var x = +'11' + +'12'
+		//(+)we are forcing string to be a number
+		if (+enteredUserAge < 1) {
+			return;
+		}
+
+		setEnteredUserName("");
+		setEnteredUserAge("");
 	};
 
 	const userChangeHandler = (event) => {
-		setEnteredUsername(event.target.value);
+		setEnteredUserName(event.target.value);
 	};
 
 	const ageChangeHandler = (event) => {
-		setEnteredUserage(event.target.value);
+		setEnteredUserAge(event.target.value);
 	};
 	return (
 		<Card cssClass={classes.input}>
 			<form onSubmit={addUserHandler}>
 				<label htmlFor="username">Username</label>
-				<input id="username" type="text" onChange={userChangeHandler} />
+				<input
+					id="username"
+					type="text"
+					value={enteredUserName}
+					onChange={userChangeHandler}
+				/>
 				<label htmlFor="age">Age (Years)</label>
-				<input id="age" type="number" onChange={ageChangeHandler} />
+				<input
+					id="age"
+					type="number"
+					value={enteredUserAge}
+					onChange={ageChangeHandler}
+				/>
 				<Button type="submit">Add User</Button>
 			</form>
 		</Card>
