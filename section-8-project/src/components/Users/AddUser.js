@@ -33,7 +33,7 @@ const AddUser = (props) => {
 		setEnteredUserAge(event.target.value);
 	};
 	return (
-		<Card cssClass={classes.input}>
+		<Card className={classes.input}>
 			<form onSubmit={addUserHandler}>
 				<label htmlFor="username">Username</label>
 				<input
