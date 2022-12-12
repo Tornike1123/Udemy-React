@@ -18,3 +18,8 @@ Side Effect
 
 useEffect hook is a function. that U can run inside your component function
 ![](/Slides/useEffect.png)
+
+---
+
+**useReducer Hook**
+![](/Slides/usereducer1.png)
