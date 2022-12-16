@@ -26,3 +26,4 @@ useEffect hook is a function. that U can run inside your component function
 ![](/Slides/reducer_js.png)
 ![](/Slides/reduceVSuseReduce.png)
 ![](/slides/usereducer.png)
+![](/Slides/usereducer4.png)
