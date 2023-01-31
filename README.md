@@ -46,3 +46,17 @@ useEffect hook is a function. that U can run inside your component function
 > useCallback is a hook that allows us store a function across component executions. So, it allows us to tell React that we want to save a function & that function should not be recreated with every execution. **If we know that function should never change we can use useCallback to store it & disable recreation.**
 
 ![useCallback hook](/slides/useCallback.jpeg)
+
+---
+
+## Class Based Components (Statefull Components)
+
+![Class Components](/Slides/class_comps.png)
+![Class Components 2](/Slides/class_comps2.png)
+![Class Components 3](/Slides/class_comps3.png)
+![Class Components 4](/Slides/class_comps4.png)
+![Error Baundary](/Slides/errorBoundary.jpeg)
+
+> **ComponentDidCatch(error)** is similar to "try,catch" block
+
+---
