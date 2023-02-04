@@ -64,3 +64,9 @@ useEffect hook is a function. that U can run inside your component function
 ## Forms Validation
 
 ![input](/Slides/forms_validation.jpg)
+
+## useRef()
+
+**useRef** is a hook in React that allows you to access the properties of a DOM element. It returns a mutable object with a single property, **current**, which you can use to store a reference to a DOM element or any other value. The value assigned to current will persist across render cycles, making it useful for accessing elements or values that change over time.
+
+For example, you can use useRef to store a reference to an input element and then use that reference to programmatically manipulate the element, such as setting its focus or value.
