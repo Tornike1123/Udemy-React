@@ -60,3 +60,7 @@ useEffect hook is a function. that U can run inside your component function
 > **ComponentDidCatch(error)** is similar to "try,catch" block
 
 ---
+
+## Forms Validation
+
+![input](/Slides/forms_validation.jpg)
