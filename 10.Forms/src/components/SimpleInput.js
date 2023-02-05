@@ -4,8 +4,8 @@ const SimpleInput = (props) => {
 	const [enteredName, setEnteredName] = useState("");
 	const [enteredNameTouched, setEnteredNameToueched] = useState(false);
 
-	const enteredNameIsValid = enteredName.trim() !== "";
-	const nameInputIsInvalid = !enteredNameIsValid && enteredNameTouched;
+	const enteredNameIsValid = enteredName.trim() !== ""; //true (input field is not empty)
+	const nameInputIsInvalid = !enteredNameIsValid && enteredNameTouched; // input is invalid == if enteredNameIsValid is empty(false) && enteredNameTouched false(untouched)
 
 	const nameInputChangeHandler = (event) => {
 		setEnteredName(event.target.value);
