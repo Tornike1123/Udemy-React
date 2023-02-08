@@ -70,3 +70,12 @@ useEffect hook is a function. that U can run inside your component function
 **useRef** is a hook in React that allows you to access the properties of a DOM element. It returns a mutable object with a single property, **current**, which you can use to store a reference to a DOM element or any other value. The value assigned to current will persist across render cycles, making it useful for accessing elements or values that change over time.
 
 For example, you can use useRef to store a reference to an input element and then use that reference to programmatically manipulate the element, such as setting its focus or value.
+
+---
+
+## Redux Library
+
+**_Redux_** is an open-source JavaScript library for managing application state in web applications. It provides a centralized store for the data of an application and enforces unidirectional data flow, making it easier to understand how data changes in response to actions taken in the app. This makes it especially useful for developing complex, data-driven applications.
+![redux](/Slides/What_is_redux.jpg)
+![redux](/Slides/Redux_State.jpg)
+![redux](/Slides/ContextAPI_disadventages.jpg)
