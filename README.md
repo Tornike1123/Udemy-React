@@ -79,3 +79,4 @@ For example, you can use useRef to store a reference to an input element and the
 ![what is redux](/Slides/What_is_redux.jpg)
 ![redux managing state](/Slides/Redux_State.jpg)
 ![ContextApi disadventages](/Slides/ContextAPI_disadventages.jpg)
+![Redux_Concepts](/Slides/Redux_Concepts.jpg)
